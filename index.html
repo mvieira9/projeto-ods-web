@@ -1,43 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Ciência da Computação</title>
-</head>
-<script>
-        const nomeImagemCC = [
-        {text: "é programação.", image:"img/programacao.jpg"}, 
-        {text: "é matemática.", image:"img/matematica.jpg"},
-        {text: "é design.", image: "img/design.jpg"},
-        {text: "é sistemas operacionais.", image: "img/sistemaoperacional.jpg"},
-        {text: "é Internet das Coisas.", image: "img/iot.jpg"},
-        {text: "é inteligência artificial.", image: "img/ia.jpg"},
-        {text: "é banco de dados.", image: "img/bancodedados.jpg"}
-    ];
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+       <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ecotech Solutions - ODS</title>
+    </head>
 
+    <script>
+        const odsInfo = [
+             {text: "ODS 6 - Água Potável e Saneamento", image:"img/agua.jpg"},
+        {text: "ODS 7 - Energia Limpa e Acessível", image:"img/energia.jpg"},
+        {text: "ODS 11 - Cidades Sustentáveis", image:"img/cidade.jpg"},
+        {text: "ODS 12 - Consumo Responsável", image:"img/consumo.jpg"},
+        {text: "ODS 13 - Ação Contra as Mudanças Climáticas", image:"img/clima.jpg"},
+        {text: "ODS 14 - Vida na Água", image:"img/oceano.jpg"},
+        {text: "ODS 15 - Vida Terrestre", image:"img/floresta.jpg"}
+
+        ];
+        
         let i = 0;
 
-    setInterval (() => {
-        i = (i + 1) % nomeImagemCC.length;
-        document.getElementById("cc-texto-variavel").innerText = nomeImagemCC[i].text;
-         document.getElementById("cc-imagem-variavel").src = nomeImagemCC[i].image;
-        }, 1500)
+        setInterval(() => {
+            i = (i + 1) % odsInfo.length;
+
+           document.getElementById("ods-texto").textContent = odsInfo[i].text;
+         document.getElementById("ods-imagem").src = odsInfo[i].image;
+   }, 2000);
     </script>
-<body> 
-    <div class="container-landing">
-    <div class="text-landing">
-        <h1>Ciência da Computação</h1>
-        <p id="cc-texto-variavel">é banco de dados.</p>
-        <nav>
-        <a href="curso.html">conheça mais.</a>
-        </nav>
-    </div>
-    <img id="cc-imagem-variavel" src="img/bancodedados.jpg" class="landing-page-image">
-    </div>
-    <footer class="footer-landing">
-    <p>© 2026 Turma de Ciência da Computação — Instituto Federal de Santa Catarina, Campus Lages.</p>
-    </footer>   
+    
+    <body>
+     <div class="texto-landing">
+    <h1>Objetivos de Desenvolvimento Sustentável</h1>
+    <p id="ods-texto">ODS 6 - Água Potável e Saneamento</p>
+
+
+</div>
+
+    <nav>
+        <a href="ods.html">Conheça os ODS</a>
+        <a href="formulario.html">Cadastrar Ideia</a>
+        <a href="resultados.html">Ver Resultados</a>
+    </nav>
+
+
+
+ <img
+        id="ods-imagem"
+        src="img/agua.jpg"
+        alt="Objetivos de Desenvolvimento Sustentável"
+        class="landing-page-image"
+    >
+</div>
+ <footer class="footer-landing">
+        <p>
+            © 2026 EcoTech Solutions — Projeto sobre os Objetivos de Desenvolvimento Sustentável.
+        </p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>EcoTech Solutions - Cadastro</title>
+</head>
+
+<body>
+    <div class="container-landing">
+        <div class="texto-landing">
+            <h1>Cadastro de Ideias Sustentáveis</h1>
+
+            <p>Compartilhe uma ação ou projeto que possa contribuir para os Objetivos de Desenvolvimento Sustentável.
+
+            </p>
+            </div>
+            <form id = "formulario">
+                <label for="nome">Nome:</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                    >
+
+                    <label for="email">Email:</label>
+                    <input
+                    type="email"
+                    id="email"
+                    placeholder="Digite seu email"
+                    required
+                    >
+                    <label for="ods">ODS Relacionado:</label>
+                    <select id="ods">
+                        <option>ODS 6 - Água potável</option>
+                        <option>ODS 7 - Energia limpa e acessível</option>
+                        <option>ODS 12 - Consumo e produção responsáveis</option>
+                        <option>ODS 13 - Ação contra a mudança global do clima</option>
+                        <option>ODS 14 - Vida na água</option>
+                        <option>ODS 15 - Vida terrestre</option>
+                    </select>
+                    <label for="Ideia">Sua Ideia sustentável</label>
+                    <textarea id="ideia" placeholder="Descreva sua ideia sustentável aqui..." required></textarea>
+                    required
+                   </textarea>
+                   <button type="submit">Cadastrar Ideia</button>
+            </form>
+    </div>
+
+    <footer class="footer-landing">
+        <p>
+            © 2026 EcoTech Solutions — Projeto sobre os Objetivos de Desenvolvimento Sustentável.
+        </p>
+
+
+</body>
+</html>
