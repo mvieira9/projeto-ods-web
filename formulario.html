@@ -5,56 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>EcoTech Solutions - Cadastro</title>
+    <script src="js/script.js" defer></script>
 </head>
-
 <body>
-    <div class="container-landing">
-        <div class="texto-landing">
-            <h1>Cadastro de Ideias Sustentáveis</h1>
+<div class="container-landing">
+    <div class="texto-landing">
+        <h1>Cadastro de Ideias Sustentáveis</h1>
 
-            <p>Compartilhe uma ação ou projeto que possa contribuir para os Objetivos de Desenvolvimento Sustentável.
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="ods.html">Conheça os ODS</a>
+            <a href="formulario.html">Cadastrar Ideia</a>
+            <a href="resultados.html">Ver Resultados</a>
+        </nav><br/>
 
-            </p> <br/>
-            <form id = "formulario">
-                <fieldset class="tabela-container">
-                    <legend>Formulário de Cadastro</legend>
+        <p>Compartilhe uma ação ou projeto que possa contribuir para os Objetivos de Desenvolvimento Sustentável.</p>
+        <br/>
+
+        <form id="formulario">
+            <fieldset class="tabela-container">
+                <legend>Formulário de Cadastro</legend>
+
                 <label for="nome">Nome:</label>
-                <input
-                    type="text"
-                    id="nome"
-                    name="nome"
-                    placeholder="Digite seu nome"
-                    required
-                    ><br/>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br/>
 
-                    <label for="email">Email:</label>
-                    <input
-                    type="email"
-                    id="email"
-                    placeholder="Digite seu email"
-                    required
-                    ><br/>
-                    <label for="ods">ODS Relacionado:</label>
-                    <select id="ods">
-                        <option>ODS 6 - Água potável</option>
-                        <option>ODS 7 - Energia limpa e acessível</option>
-                        <option>ODS 12 - Consumo e produção responsáveis</option>
-                        <option>ODS 13 - Ação contra a mudança global do clima</option>
-                        <option>ODS 14 - Vida na água</option>
-                        <option>ODS 15 - Vida terrestre</option>
-                    </select><br/>
-                    <label for="Ideia">Sua Ideia sustentável</label>
-                    <textarea id="ideia" placeholder="Descreva sua ideia sustentável aqui..." required></textarea>
-                    required
-                   </textarea>
-                   <button type="submit">Cadastrar Ideia</button>
-            </form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required><br/>
 
-    <footer class="footer-landing">
-        <p>
-            © 2026 EcoTech Solutions — Projeto sobre os Objetivos de Desenvolvimento Sustentável.
-        </p>
+                <label for="ods">ODS Relacionado:</label>
+                <select id="ods" name="ods">
+                    <option value="ODS 6 - Água potável">ODS 6 - Água potável</option>
+                    <option value="ODS 7 - Energia limpa e acessível">ODS 7 - Energia limpa e acessível</option>
+                    <option value="ODS 12 - Consumo e produção responsáveis">ODS 12 - Consumo e produção responsáveis</option>
+                    <option value="ODS 13 - Ação contra a mudança global do clima">ODS 13 - Ação contra a mudança global do clima</option>
+                    <option value="ODS 14 - Vida na água">ODS 14 - Vida na água</option>
+                    <option value="ODS 15 - Vida terrestre">ODS 15 - Vida terrestre</option>
+                </select><br/>
 
+                <label for="ideia">Sua Ideia sustentável</label>
+                <textarea id="ideia" name="ideia" placeholder="Descreva sua ideia sustentável aqui..." required></textarea>
 
+                <button type="submit">Cadastrar Ideia</button>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<footer class="footer-landing">
+    <p>© 2026 EcoTech Solutions — Projeto sobre os Objetivos de Desenvolvimento Sustentável.</p>
+</footer>
 </body>
 </html>
