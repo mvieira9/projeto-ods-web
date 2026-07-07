@@ -40,7 +40,6 @@ body>:not(header, footer, .footer-landing){
 
 main{
     flex: 1;
-    min-height: 100vh;
 }
 
 header{
