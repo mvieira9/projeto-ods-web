@@ -131,7 +131,8 @@ table.tabela-container{
 
 .tabela-celula input, 
 .tabela-celula textarea{
-    text-indent: 2%;
+      padding: 10px 15px; 
+      box-sizing: border-box; 
 }
 
 .tabela-celula select{
