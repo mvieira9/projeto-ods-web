@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100..1000;1,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 
 *{
     margin:0;
@@ -32,41 +32,80 @@ body{
     flex-direction:column;
 }
 
-body>:not(header){
+body>:not(header, footer, .footer-landing){
     margin:0 auto;
     width:90%;
     max-width:1400px;
 }
 
+main{
+    flex: 1;
+    min-height: 100vh;
+}
+
 header{
+    position: relative;
     margin-top:2vh;
     margin-bottom:2vh;
 }
 
 header h1{
-    font-size:4rem;
+    font-size:3rem;
     font-weight:400;
-    margin-bottom:20px;
+    margin-bottom: 5vh;
+    margin-left: 10vw;
+}
+
+::placeholder{
+    text-align: center;
 }
 
 .container-landing{
-    flex:1;
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-
-    gap:60px;
-
-    min-height:80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .tabela-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
     border-radius: 10px;
     background: #5464649f;
     color:#ffffff;
     margin:50px auto;
-    width:90%;
+    width:60%;
     max-width:1400px;
+    padding: 10px;
+}
+
+.tabela-celula{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.tabela-celula input, 
+.tabela-celula select, 
+.tabela-celula textarea, 
+.tabela-celula button{
+    height: 40px;
+    resize: none;
+    font-family: 'DM Sans';
+    text-align: center;
+}
+
+.tabela-celula button{
+    margin-top: 2vh;
+}
+
+.tabela-container select option{
+    font-family: 'DM Sans', sans-serif !important;
+}
+
+.tabela-container label{
+    display: block;
+    margin: 10px;
 }
 
 .texto-landing{
@@ -138,10 +177,9 @@ footer{
 }
 
 .footer-landing{
-    position: sticky;
     bottom:0;
     width:100%;
-    margin-top:220px;
+    margin-top: 10vh;
 
     box-shadow:
     0 -8px 24px rgba(0,0,0,.4);
