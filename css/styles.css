@@ -185,30 +185,6 @@ footer{
     0 -8px 24px rgba(0,0,0,.4);
 }
 
-.quem-somos{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-}
-
-.perfil{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-
-    text-align:center;
-}
-
-.perfil img{
-    height:15vh;
-    width:auto;
-
-    margin-bottom:2vh;
-
-    mix-blend-mode:screen;
-}
-
 details{
     border-top:1px solid rgba(255,255,255,.15);
 }
@@ -260,7 +236,4 @@ details p{
         height:auto;
     }
 
-    .quem-somos{
-        grid-template-columns:1fr;
-    }
-}
+    
