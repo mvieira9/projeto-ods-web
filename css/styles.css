@@ -57,10 +57,6 @@ header h1{
     margin-left: 10vw;
 }
 
-::placeholder{
-    text-align: center;
-}
-
 .container-landing{
     display: flex;
     align-items: center;
@@ -123,10 +119,27 @@ table.tabela-container{
 .tabela-celula select, 
 .tabela-celula textarea, 
 .tabela-celula button{
-    height: 40px;
     resize: none;
     font-family: 'DM Sans';
+}
+
+.tabela-celula input, 
+.tabela-celula select, 
+.tabela-celula button{
+    height: 5vh;
+}
+
+.tabela-celula input, 
+.tabela-celula textarea{
+    text-indent: 2%;
+}
+
+.tabela-celula select{
     text-align: center;
+}
+
+.tabela-celula textarea{
+    height: 8vh;
 }
 
 .tabela-celula button{
@@ -198,7 +211,7 @@ nav a:hover{
     border-radius:25px;
 
     box-shadow:
-    0 20px 50px rgba(0,0,0,.35),
+    0 20px 50px rgba(0, 0, 0, 0.918),
     0 0 40px rgba(172, 252, 217, 0.575);
 }
 
@@ -217,7 +230,7 @@ footer{
     margin-top: 2vh;
 
     box-shadow:
-    0 -8px 24px rgba(0,0,0,.4);
+    0 -8px 24px rgba(0, 0, 0, 0.089);
 }
 
 details{
