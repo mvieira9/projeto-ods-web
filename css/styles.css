@@ -44,15 +44,16 @@ main{
 }
 
 header{
+    display: flex;
+    flex-direction: column;
     position: relative;
     margin-top:2vh;
-    margin-bottom:2vh;
+    margin-bottom: 2vh;
 }
 
 header h1{
     font-size:3rem;
     font-weight:400;
-    margin-bottom: 5vh;
     margin-left: 10vw;
 }
 
@@ -77,6 +78,39 @@ header h1{
     width:60%;
     max-width:1400px;
     padding: 10px;
+}
+
+table.tabela-container{
+    display: table;               /* override the flex display used on the form version */
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    background: #5464649f;
+    color: #ffffff;
+    width: 90%;
+    max-width: 1400px;
+    margin: 50px auto;
+    overflow: hidden;
+    font-family: 'DM Sans', sans-serif;
+}
+.tabela-container th,
+.tabela-container td{
+    padding: 16px 20px;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+.tabela-container th{
+    color: #acfcd9;
+    font-weight: 600;
+    font-size: 1rem;
+    background: rgba(0,0,0,.15);
+}
+.tabela-container tr:last-child td{
+    border-bottom: none;
+}
+.tabela-container tr:hover td{
+    background: rgba(172, 252, 217, 0.08);
 }
 
 .tabela-celula{
@@ -130,6 +164,7 @@ nav{
     display:flex;
     flex-wrap:wrap;
     gap:15px;
+    margin-left: 10%;
 }
 
 a{
@@ -189,6 +224,30 @@ details{
     border-top:1px solid rgba(255,255,255,.15);
 }
 
+.texto-ods p{
+    line-height: 1.7;
+    margin-bottom: 20px;
+    max-width: 900px;
+}
+.texto-ods h3{
+    color: #acfcd9;
+    font-weight: 400;
+    margin: 30px 0 15px;
+}
+.lista-metas{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.lista-metas li{
+    line-height: 1.6;
+}
+.lista-metas strong{
+    color: #acfcd9;
+    margin-right: 6px;
+}
+
 summary{
     color:#84ddb5;
 
@@ -209,6 +268,21 @@ details p{
     line-height:1.7;
     margin-bottom:15px;
 }
+
+.icone-folha{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;      /* clips the real (translated) image out of view */
+    vertical-align: middle;
+}
+.icone-folha img{
+    width: 30px;
+    height: 30px;
+    transform: translateY(-1000px);
+    filter: drop-shadow(0px 1000px 0 #acfcd9);
+}
+
 
 @media(max-width:1000px){
 
