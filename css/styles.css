@@ -147,12 +147,6 @@ footer{
     0 -8px 24px rgba(0,0,0,.4);
 }
 
-.quem-somos{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-}
-
 .perfil{
     display:flex;
     flex-direction:column;
@@ -222,7 +216,4 @@ details p{
         height:auto;
     }
 
-    .quem-somos{
-        grid-template-columns:1fr;
-    }
-}
+    
