@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('article');
             card.classList.add('card-resultado');
             card.innerHTML = `
+                <br>
                 <h2>${item.nome}</h2>
                 <p><strong>E-mail:</strong> ${item.email}</p>
                 <p><strong>ODS Escolhido:</strong> ${item.ods}</p>
